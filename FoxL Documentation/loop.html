@@ -37,7 +37,7 @@
                 </a>
                 </li>
                 <li>
-                <a href="usage.html" class="nav-link active">
+                <a href="usage.html" class="nav-link text-white">
                     <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
                     What can be FoxL used for?
                 </a>
@@ -50,7 +50,7 @@
                 </a>
                 </li>
                 <li>
-                <a href="loop.html" class="nav-link text-white">
+                <a href="loop.html" class="nav-link active">
                     <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
                     Loops
                 </a>
@@ -103,25 +103,63 @@
             <hr>
         </div>
 
-        <div class="d-inline p-2 d-flex flex-column flex-shrink-0 p-3" style="display: inline-block;">
-            <h2 class="margin-top: 10px">What can be FoxL used for?</h2><hr/>
+        <div class="d-inline p-2 d-flex flex-column flex-shrink-0 p-3" style="overflow-y: scroll; height: 745px; display: inline-block;">
+            <h2 class="margin-top: 10px">Loops</h2><hr/>
             <p>
-                FoxL is a new programming language designed to be easy to learn and use. It's still in development, but it's already been used to create a number of apps, including an AI assistant and a learning game. FoxL has the potential to revolutionize the way we interact with computers.
+                In FoxL, a loop is a control construct that executes a block of code a number of times. There are two main types of loops in FoxL: for loops and while loops.
             </p>
             <p>
-                Here are some examples of how FoxL can be used:
+                The for loop is used to repeat a block of code a predetermined number of times. The syntax of the for loop is as follows:
             </p>
-            <ol>
-                <ul>Create web and desktop applications</ul>
-                <ul>Game development</ul>
-                <ul>Building learning apps</ul>
-                <ul>Create artworks and graphics</ul>
-                <ul>Automate tasks</ul>
-                <ul>Scientific and technical research</ul>
-                <ul>Development of artificial intelligence</ul>
-            </ol>
+            <code>
+                <pre>
+                    for ({initialization variable}; {condition}; {jump}) {
+                        {code block}
+                    }
+                </pre>
+            </code>
             <p>
-                FoxL is a powerful and flexible language that can be used to create many different types of applications. If you are looking for a new programming language to learn, FoxL is a great choice.
+                {initialization variable} is executed once before the loop starts.
+                {condition} is checked after each loop. If the condition is true, the loop will continue. If the condition is false, the loop will terminate.
+                {jump} is executed after each loop. It can be a number, an expression, or a command.
+                For example, the following code will print the numbers 1 through 10:
+            </p>
+            <code>
+                <pre>
+                    for (var i = 1; i &lt;= 10; i++) {
+                        print(i);
+                    }
+                </pre>
+            </code>
+            <p>
+                The while loop is used to repeat a block of code until a certain condition is satisfied. The syntax of the while loop is as follows:
+            </p>
+            <code>
+                <pre>
+                    while ({condition}) {
+                        {code block}
+                    }
+                </pre>
+            </code>
+            <p>
+                The loop will continue to execute the block of code until the condition is false.
+            </p>
+            <p>
+                For example, the following code will print even numbers from 1 to 20:
+            </p>
+            <code>
+                <pre>
+                    i = 1;
+                    while (i &lt;= 20) {
+                        if (i % 2 == 0) {
+                            print(i);
+                        }
+                        i++;
+                    }
+                </pre>
+            </code>
+            <p>
+                Loops are a powerful tool that can be used to perform many types of tasks in FoxL.
             </p>
         </div>
     </body>
